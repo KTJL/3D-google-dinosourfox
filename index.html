@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WebPage Title </title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body onload="main()">
+        <canvas id="webgl" width = "2000" height = "950">
+            Please use a browser that support "canvas"
+        </canvas>
+        <script src="cuon-matrix.js"></script>
+        <script src="WebGL.js"></script>
+        <div class="ui">
+            <div class="score-layout">
+              <div class="score-text" id="score-text">
+                SCORE: 00000
+              </div>
+            </div>
+        </div>
+        <div class="ui"> 
+          <div class="intro-layout">
+            <div class="intro-text" id="intro-text">
+              A/W/S/D : MOVE MODAL<br>J : JUMP<br>1 : FIRST PERSON VIEW ANGLE / 3 : THIRD PERSON VIEW ANGLE
+            </div>
+          </div>
+      </div>
+        <div class="ui">
+            <div class="game-over-layout" id="game-over">
+              <div class="game-over-text">GAME OVER</div>
+            </div>      
+        </div>
+        <audio id = "backgroundMusic" autoplay>
+          <source src = "cottagecore-17463.mp3" type="audio/mp3">
+        </audio>
+        <audio id = "startMusic" autoplay>
+          <source src = "game-start-6104.mp3" type="audio/mp3">
+        </audio>
+        <audio id = "jumpMusic">
+          <source src = "cartoon-jump-6462.mp3" type="audio/mp3">
+        </audio>
+        <audio id = "coinMusic">
+          <source src = "collectcoin-6075.mp3" type="audio/mp3">
+        </audio>
+        <audio id = "overMusic">
+          <source src = "game-over-arcade-6435.mp3" type="audio/mp3">
+        </audio>
+    </body>
+    
+</html>
+
+
